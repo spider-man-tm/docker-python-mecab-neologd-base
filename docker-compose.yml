@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  mecab:
+    container_name: "mecab-python-neologd"
+    image: "mecab-python-neologd"
+    build: .
+    volumes:
+      - "./container:/workdir"
+    tty: true
